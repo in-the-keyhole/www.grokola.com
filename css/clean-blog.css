@@ -23,7 +23,7 @@ h4,
 h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 800;
 }
 a {
   color: #404040;
@@ -34,7 +34,7 @@ a:focus {
 }
 a img:hover,
 a img:focus {
-  cursor: pointer;
+  cursor: zoom-in;
 }
 blockquote {
   color: #808080;
@@ -50,7 +50,7 @@ hr.small {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;  background: #000 !important;
+  width: 100%;
   z-index: 3;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -62,7 +62,7 @@ hr.small {
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 1px;
-}.per {	margin: 0px 12px 20px;	padding: 10px 21px;	border: 1px solid #eceff1;	border-radius: 6px;	-webkit-border-radius: 6px;	-moz-border-radius: 6px;	text-align: center;}.per img {	border-radius: 100px;	-webkit-border-radius: 100px;	-moz-border-radius: 100px;}
+}
 @media only screen and (min-width: 768px) {
   .navbar-custom {
     background: transparent;
@@ -70,19 +70,19 @@ hr.small {
   }
   .navbar-custom .navbar-brand {
     color: white;
-    padding: 10px 20px 20px;
+    padding: 20px;
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
     color: rgba(255, 255, 255, 0.8);
   }
   .navbar-custom .nav li a {
-    color: #fff;
+    color: white;
     padding: 20px;
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: #cddb28;
+    color: rgba(255, 255, 255, 0.8);
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -103,8 +103,8 @@ hr.small {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
     top: -61px;
-    background-color: rgba(0, 0, 0, 0.9);
-    /*border-bottom: 1px solid #f2f2f2;*/
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #f2f2f2;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
@@ -117,11 +117,11 @@ hr.small {
     color: #0085a1;
   }
   .navbar-custom.is-fixed .nav li a {
-    color: #fff;
+    color: #404040;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #cddb28;
+    color: #0085a1;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -140,19 +140,19 @@ hr.small {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
-  padding: 0px 0 0px;
-  color: #a1a1a1;
-}.pricing-table {	width:  100%;}.pricing-table td, .pricing-table th {	width: 25%;	max-width: 100%;	padding: 10px 0;	border-bottom: 1px solid #eee;	font-family: 'Aria', sans-serif;	font-size: 16px;	transition: all 300ms cubic-bezier(0.23,1,.32,1);	-webkit-transition: all 300ms cubic-bezier(0.23,1,.32,1);	-moz-transition: all 300ms cubic-bezier(0.23,1,.32,1);}
+  padding: 100px 0 50px;
+  color: white;
+}
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 150px 0 50px;
+    padding: 150px 0;
   }
 }
 .intro-header .site-heading,
@@ -168,7 +168,7 @@ hr.small {
 .intro-header .page-heading .subheading {
   font-size: 24px;
   line-height: 1.1,
-			display: block;
+      display: block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin: 10px 0 0;
@@ -392,4 +392,4 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #0085a1;
-}/*-------------------------	Pricing Pod---------------------------*/.pricing-pod {	float: left;	width: 22%;	margin: 0 10px 0 0;	border: 1px solid #ccc;	box-shadow: 5px 5px 0 rgba(0,0,0,.07);	-webkit-box-shadow: 5px 5px 0 rgba(0,0,0,.07);	-moz-box-shadow: 5px 5px 0 rgba(0,0,0,.07);}
+}

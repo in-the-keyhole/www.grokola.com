@@ -2,15 +2,55 @@
 <html lang="en">
 
 <head>
+    <title>grokOla</title>
+
+    <meta charset="utf-8">
     <meta name="globalsign-domain-verification" content="D1c6_GcD6QZl2jfdltgpFMJvJlLhvx2zitY0eFp3Za" />
     <meta name="test">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cleartype" content="on">
 
-    <title>grokOla</title>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- For iOS web apps. Start -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="grokOla">
+
+    <!-- Tile icon for Win8 Start -->
+    <meta name="msapplication-TileImage" content="img/touch/Icon-72@2x.png">
+    <meta name="msapplication-TileColor" content="#7fa51b">
+
+    <!--
+        Chrome 31+ has home screen icon 192×192 (the recommended size for multiple resolutions).
+        If it’s not defined on that size it will take 128×128.
+    -->
+    <link rel="icon" sizes="192x192" href="img/touch/android/192.png">
+    <link rel="icon" sizes="128x128" href="img/touch/android/128.png">
+
+    <!-- iPad and iPad mini (with @2× display) iOS ≥ 8 -->
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/touch/ios/Icon-60@3x.png">
+    <!-- iPad 3+ (with @2× display) iOS ≥ 7 -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/touch/ios/Icon-76@2x.png">
+    <!-- iPad (with @2× display) iOS ≤ 6 -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/ios/Icon-72@2x.png">
+    <!-- iPhone (with @2× and @3 display) iOS ≥ 7 -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/touch/ios/Icon-60@2x.png">
+    <!-- iPhone (with @2× display) iOS ≤ 6 -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/ios/Icon@2x.png">
+    <!-- iPad mini and the first- and second-generation iPad (@1× display) on iOS ≥ 7 -->
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/touch/ios/Icon-76.png">
+    <!-- iPad mini and the first- and second-generation iPad (@1× display) on iOS ≤ 6 -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/ios/Icon-72.png">
+    <!-- Android Stock Browser and non-Retina iPhone and iPod Touch -->
+    <link rel="apple-touch-icon-precomposed" href="img/touch/ios/icon.png">
+    <!-- Fallback for everything else -->
+    <link rel="shortcut icon" href="img/touch/ios/icon.png">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,15 +58,23 @@
     <!-- Custom CSS -->
     <link href="css/clean-blog.css" rel="stylesheet">
 
+    <!-- Site Specfic CSS -->
+    <link href="css/grokola.css" rel="stylesheet">
+
+    <!-- Site Utils CSS -->
+    <link href="css/utils.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Feature Detection and HTML5 Element Support -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- Respond.js IE8 media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
@@ -45,7 +93,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" /></a>
+                <a class="navbar-brand" href="index.html"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -71,50 +119,194 @@
     </nav>
 
     <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>Clean Blog</h1>
-                        <hr class="small">
-                        <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
-                    </div>
-                </div>
-            </div>
+    <header class="intro-header  g-coverHeader" role="banner">
+        <div class="site-heading  g-coverHeader__caption">
+            <h1 class="g-coverHeader__captionContent">
+                Code Solutions, Wiki, questions and Answers for Tribal Knowledge retention...
+            </h1>
         </div>
     </header>
 
     <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-10">
-            	<p>Content here</p>
-            	<!--<div class="pricing-pod">
-            		<h2>header here</h2>
-            		<p>dsakl;dsafjkl</p>
-            	</div>
-            	<div class="col-lg-3 pricing-pod">
-            		<h2>header here</h2>
-            		<p>dsakl;dsafjkl</p>
-            	</div>
-            	<div class="col-lg-3 pricing-pod">
-            		<h2>header here</h2>
-            		<p>dsakl;dsafjkl</p>
-            	</div>
-            	<div class="col-lg-3 pricing-pod">
-            		<h2>header here</h2>
-            		<p>dsakl;dsafjkl</p>
-            	</div>-->
-            </div>
-        </div>
-    </div>
+    <main class="container  push--top" role="main">
 
-    <hr>
+        <!-- A few bullet point about grokOla -->
+        <section class="push--bottom">
+            <ul class="list-unstyled  row">
+                <li class="col-xs-12  col-sm-4  push--bottom">
+                    <div class="media">
+                        <div class="media-left">
+                            <span class="h3  flush" aria-hidden="true">
+                                <i class=" glyphicon  glyphicon-tags  text-primary"></i>
+                            </span>
+                        </div>
+                        <div class="media-body">
+                            <h6 class="media-heading  h6  caps">
+                                <strong>Key Point 1</strong>
+                            </h6>
+                            <p class="flush--ends  h5  weight--light  text-muted">Nullam eleifend dapibus ipsum. Nunc ut scelerisque odio. Proin interdum ante eu dignissim pretium.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-xs-12  col-sm-4  push--bottom">
+                    <div class="media">
+                        <div class="media-left">
+                            <span class="h3  flush" aria-hidden="true">
+                                <i class=" glyphicon  glyphicon-book  text-primary"></i>
+                            </span>
+                        </div>
+                        <div class="media-body">
+                            <h6 class="media-heading  h6  caps">
+                                <strong>Key Point 2</strong>
+                            </h6>
+                            <p class="flush--ends  h5  weight--light  text-muted">
+                                Quisque et magna ante. Duis lacinia arcu id sem gravida, nec congue mauris tincidunt. Donec ipsum arcu.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-xs-12  col-sm-4  push--bottom">
+                    <div class="media">
+                        <div class="media-left">
+                            <span class="h3  flush" aria-hidden="true">
+                                <i class=" glyphicon  glyphicon-road  text-primary"></i>
+                            </span>
+                        </div>
+                        <div class="media-body">
+                            <h6 class="media-heading  h6  caps">
+                                <strong>Key Point 3</strong>
+                            </h6>
+                            <p class="flush--ends  h5  weight--light  text-muted">
+                                Morbi consequat cursus turpis id iaculis. Fusce sed nulla consectetur leo bibendum suscipit et eu justo.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- grkOla Core Features -->
+        <section>
+            <aside class="text--center  push--bottom">
+                <span class="h3  flush  push-half--bottom">
+                    <i class="glyphicon glyphicon-th-large"></i>
+                </span>
+                <h6 class="h1  flush"><small>Core Features</small></h6>
+                <p class="flush--top h5  weight--light">
+                    Had you stepped on board the Pequod at a certain juncture of this post-mortemizing
+                    of the whale. Like most old fashioned pulpits, it was a very lofty one, stairs.
+                </p>
+            </aside>
+            <div class="row">
+                <ul class="col-xs-12  col-sm-4  list-unstyled  push-half--bottom">
+                    <li class="push--bottom">
+                        <div class="media  icon-box">
+                            <div class="media-body  text-right">
+                                <h6 class="media-heading  h6  caps">
+                                    <strong>Feature 1</strong>
+                                </h6>
+                                <p class="flush--ends  h5  weight--light  text-muted">Nullam eleifend dapibus ipsum. Nunc ut scelerisque odio. Proin interdum ante eu dignissim pretium.</p>
+                            </div>
+                            <div class="media-right">
+                                <span class="h3  flush  icon-box__media" aria-hidden="true">
+                                    <i class=" glyphicon  glyphicon-magnet"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="push--bottom">
+                        <div class="media  icon-box">
+                            <div class="media-body  text-right">
+                                <h6 class="media-heading  h6  caps">
+                                    <strong>Feature 2</strong>
+                                </h6>
+                                <p class="flush--ends  h5  weight--light  text-muted">Nullam eleifend dapibus ipsum. Nunc ut scelerisque odio. Proin interdum ante eu dignissim pretium.</p>
+                            </div>
+                            <div class="media-right">
+                                <span class="h3  flush  icon-box__media" aria-hidden="true">
+                                    <i class=" glyphicon  glyphicon-fire"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="push--bottom">
+                        <div class="media  icon-box">
+                            <div class="media-body  text-right">
+                                <h6 class="media-heading  h6  caps">
+                                    <strong>Feature 3</strong>
+                                </h6>
+                                <p class="flush--ends  h5  weight--light  text-muted">Lorem ipsum dolor sit amet, ei has error ridens deleniti. Euripidis voluptatum te nam. Posse tincidunt ea vis.</p>
+                            </div>
+                            <div class="media-right">
+                                <span class="h3  flush  icon-box__media" aria-hidden="true">
+                                    <i class=" glyphicon  glyphicon-flag"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="col-xs-12  col-sm-4  push-half--bottom">
+                    <img class="img-responsive  block-center" src="http://placehold.it/250x530&text=screen+shot+here">
+                </div>
+                <ul class="col-xs-12  col-sm-4  list-unstyled  push--top">
+                    <li class="push--bottom">
+                        <div class="media  icon-box">
+                            <div class="media-left">
+                                <span class="h3  flush  icon-box__media" aria-hidden="true">
+                                    <i class=" glyphicon  glyphicon-magnet"></i>
+                                </span>
+                            </div>
+                            <div class="media-body">
+                                <h6 class="media-heading  h6  caps">
+                                    <strong>Feature 1</strong>
+                                </h6>
+                                <p class="flush--ends  h5  weight--light  text-muted">Nullam eleifend dapibus ipsum. Nunc ut scelerisque odio. Proin interdum ante eu dignissim pretium.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="push--bottom">
+                        <div class="media  icon-box">
+                            <div class="media-left">
+                                <span class="h3  flush  icon-box__media" aria-hidden="true">
+                                    <i class=" glyphicon  glyphicon-fire"></i>
+                                </span>
+                            </div>
+                            <div class="media-body">
+                                <h6 class="media-heading  h6  caps">
+                                    <strong>Feature 2</strong>
+                                </h6>
+                                <p class="flush--ends  h5  weight--light  text-muted">Nullam eleifend dapibus ipsum. Nunc ut scelerisque odio. Proin interdum ante eu dignissim pretium.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="push--bottom">
+                        <div class="media  icon-box">
+                            <div class="media-left">
+                                <span class="h3  flush  icon-box__media" aria-hidden="true">
+                                    <i class=" glyphicon  glyphicon-flag"></i>
+                                </span>
+                            </div>
+                            <div class="media-body">
+                                <h6 class="media-heading  h6  caps">
+                                    <strong>Feature 3</strong>
+                                </h6>
+                                <p class="flush--ends  h5  weight--light  text-muted">Lorem ipsum dolor sit amet, ei has error ridens deleniti. Euripidis voluptatum te nam. Posse tincidunt ea vis.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <hr>
+        <section></section>
+
+    </main>
 
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -158,6 +350,16 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X when account is setup. -->
+    <!-- <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script> -->
 
 </body>
 
