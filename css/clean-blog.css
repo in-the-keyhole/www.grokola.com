@@ -5,7 +5,7 @@
  */
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Open Sans', 'Helvetica Neue', serif;
   font-size: 20px;
   color: #404040;
 }
@@ -22,9 +22,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 400;
-}
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;  letter-spacing: -1px;}h2 {	font-size: 34px;}
 a {
   color: #404040;
 }
@@ -45,8 +44,7 @@ hr.small {
   margin: 15px auto;
   border-width: 4px;
   border-color: white;
-}
-.navbar-custom {
+}.navbar-custom {
   position: absolute;
   top: 0;
   left: 0;
@@ -62,7 +60,7 @@ hr.small {
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 1px;
-}.per {	margin: 0px 12px 20px;	padding: 10px 21px;	border: 1px solid #eceff1;	border-radius: 6px;	-webkit-border-radius: 6px;	-moz-border-radius: 6px;	text-align: center;}.per img {	border-radius: 100px;	-webkit-border-radius: 100px;	-moz-border-radius: 100px;}
+}.per {	margin: 0px 0px 20px;	padding: 10px 21px;/*	border: 1px solid #eceff1;	border-radius: 6px;	-webkit-border-radius: 6px;	-moz-border-radius: 6px;*/	text-align: center;}.per img {	border-radius: 100px;	-webkit-border-radius: 100px;	-moz-border-radius: 100px;}
 @media only screen and (min-width: 768px) {
   .navbar-custom {
     background: transparent;
@@ -146,18 +144,18 @@ hr.small {
 .intro-header .post-heading,
 .intro-header .page-heading {
   padding: 0px 0 0px;
-  color: #a1a1a1;
-}.pricing-table {	width:  100%;}.pricing-table td, .pricing-table th {	width: 25%;	max-width: 100%;	padding: 10px 0;	border-bottom: 1px solid #eee;	font-family: 'Aria', sans-serif;	font-size: 16px;	transition: all 300ms cubic-bezier(0.23,1,.32,1);	-webkit-transition: all 300ms cubic-bezier(0.23,1,.32,1);	-moz-transition: all 300ms cubic-bezier(0.23,1,.32,1);}
+  color: #333;
+}.intro-header .site-heading hr,.intro-header .post-heading hr,.intro-header .page-heading hr {	border-color: #333;}.pricing-table {	width:  100%;}.pricing-table td, .pricing-table th {	width: 25%;	max-width: 100%;	padding: 10px 0;	border-bottom: 1px solid #eee;	font-family: 'Aria', sans-serif;	font-size: 16px;	transition: all 300ms cubic-bezier(0.23,1,.32,1);	-webkit-transition: all 300ms cubic-bezier(0.23,1,.32,1);	-moz-transition: all 300ms cubic-bezier(0.23,1,.32,1);}.basic {	float: right;}.plus {	float: left;}.basic, .plus {	display: block;	width: 300px;	margin: 71px auto 0;/*	padding: 0 30px 52px;*/	padding-bottom: 52px;	border: 1px solid #eceff1;	border-radius: 6px;	-webkit-border-radius: 6px;	-moz-border-radius: 6px;		text-align: center;	overflow: hidden;}.basic hr.basic, .plus hr.plus {	float: none;	display: block;	width: 205px;	margin: 0 auto;	padding: 0px;	border-bottom: 1px solid #eceff1;	border-top: 0px;	border-radius: 0px;	-webkit-border-radius: 0px;	-moz-border-radius: 0px;}.basic h1, .plus h1 {	margin: 46px 0 40px;	color: #a1a4b0;	font-size: 30px;}.basic h2, .plus h2 {	margin: 58px 0 47px;	color:  #36373b;	font-size: 30px;}.basic ul, .plus ul {	margin: 0 0 40px;	padding: 0;}.basic ul li, .plus ul li {	color:  #858788;	font-size: 18px;	font-weight: 100;	line-height: 36px;	list-style: none;}.basic i, .plus i {	padding-right: 8px;	color: #56a4e1;	font-size: 14px;	vertical-align: 2px;}.basic a, .plus a {	color:  #56a4e1;	font-size: 22px;	text-transform: uppercase;}.premiumplan {	box-shadow: 0 0 60px rgba(214,215,220,.95);	border-radius: 6px;	-webkit-border-radius: 6px;	-moz-border-radius: 6px;	transition: all 2000ms cubic-bezier(0.23,1,.32,1);}.premiumheader {	width: 100%;	height: 84px;	display: block;	background: radial-gradient(at bottom, #A6CE38, #719225);	border-top-left-radius: 6px;	border-top-right-radius: 6px;	-webkit-border-top-left-radius: 6px;	-webkit-border-top-right-radius: 6px;	-moz-border-radius-topleft: 6px;	-moz-border-radius-topright: 6px;	text-align: center;}.premiumheader h1 {	margin: 0;	padding: 24px 0 20px;	color: #fff;	font-size: 36px;}.premium {	float: none;	display: block;	width: 360px;	margin: 0 auto 118px;	padding-bottom: 58px;/*	padding: 0 40px 58px;*/		border: 1px solid #eceff1;	border-top: 0px;	border-bottom-right-radius: 6px;	border-bottom-left-radius: 6px;	-webkit-border-bottom-left-radius: 6px;	-webkit-border-bottom-right-radius: 6px;	-moz-border-radius-bottomleft: 6px;	-moz-border-radius-bottomright: 6px;		text-align: center;	overflow: hidden;}.premium h2 {	margin: 71px 0 64px;		color: #36373b;	font-size: 36px;}.premium ul {	margin-bottom: 49px;	padding: 0;}.premium li {	color:  #858788;	font-size: 18px;	font-weight: 100;	line-height: 36px;	list-style: none;}.premium i {	padding-right: 8px;	color: #A6CE38;	font-size: 14px;	vertical-align: 2px;}.premium a {	padding: 10px 30px 9px;		background-color: #A6CE38;	border-radius: 100px;	-webkit-border-radius: 100px;	-moz-border-radius: 100px;		color: #fff;	text-transform: uppercase;}.page-subheading {	margin: 0 0 50px;	padding: 0 0 10px;	border-bottom: 1px solid #eee;}
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
     padding: 150px 0 50px;
   }
-}
+}
 .intro-header .site-heading,
 .intro-header .page-heading {
-  text-align: center;
+/*  text-align: center;*/
 }
 .intro-header .site-heading h1,
 .intro-header .page-heading h1 {
@@ -167,12 +165,12 @@ hr.small {
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
   font-size: 24px;
-  line-height: 1.1,
-			display: block;
+  line-height: 1.1;
+  display: block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin: 10px 0 0;
-}
+}
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading h1,
   .intro-header .page-heading h1 {
@@ -392,4 +390,4 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #0085a1;
-}/*-------------------------	Pricing Pod---------------------------*/.pricing-pod {	float: left;	width: 22%;	margin: 0 10px 0 0;	border: 1px solid #ccc;	box-shadow: 5px 5px 0 rgba(0,0,0,.07);	-webkit-box-shadow: 5px 5px 0 rgba(0,0,0,.07);	-moz-box-shadow: 5px 5px 0 rgba(0,0,0,.07);}
+}/*-------------------------	Pricing Pod---------------------------*/.pricing-pod {	float: left;	width: 22%;	margin: 0 10px 0 0;	border: 1px solid #ccc;	box-shadow: 5px 5px 0 rgba(0,0,0,.07);	-webkit-box-shadow: 5px 5px 0 rgba(0,0,0,.07);	-moz-box-shadow: 5px 5px 0 rgba(0,0,0,.07);}@media (min-width:992px) and (max-width:1199px){	.basic{width:280px;float:left}	.plus{width:280px;float:right}	.premiumplan{width:360px;margin-left:auto;margin-right:auto}	.col-md-3{padding-left:0;padding-right:0}	.premiumplan{box-shadow:0 0 60px rgba(214,215,220,.5)}	.premiumplan:hover{box-shadow:0 0 45px rgba(214,215,220,.35)}}@media (min-width:481px) and (max-width:767px){	.navbar .navbar-default{margin:31px 0 32px}	#planh1{line-height:42px;margin:56px 0 21px;padding-left:20px;padding-right:20px}	.plan{height:1868px}	.premiumplan{width:360px;margin-top:-478px;margin-left:auto;margin-right:auto}	.basic{position:relative;float:none;left:0;top:1113px}	.plus{position:relative;float:none;left:0;top:-59px}	hr.basic,hr.plus{top:0;left:0}	.premheader h1{margin:inherit}	.basic h1,.plus h1{margin-top:46px;margin-bottom:40px}	.sptab h1{margin:0 auto 54px;line-height:42px}	.tab{width:91.463415%;margin-bottom:43px;line-height:42px}	.premiumplan{box-shadow:0 0 60px rgba(214,215,220,.5)}}@media (min-width:768px) and (max-width:991px){	.navbar-default li a{padding:15px 0 0 20px!important}	.plan h1{margin:58px 0 0}	.basic{width:280px;float:right;position:relative;top:598px;left:-16px}	.plus{width:280px;float:left;position:relative;top:-130px;left:387px}	.premiumplan{width:360px;margin-left:auto;margin-right:auto;margin-top:-477px}	.sptab h1{margin:-12px auto 85px}	.premiumplan{box-shadow:0 0 60px rgba(214,215,220,.5)}	.premiumplan:hover{box-shadow:0 0 45px rgba(214,215,220,.35)}	hr.basic,hr.plus{top:0;left:0}	.premheader h1{margin:inherit}	.basic h1,.plus h1{margin-top:46px;margin-bottom:40px}}@media (max-width:480px){	.navbar .navbar-default{margin:31px 0 32px}	#planh1{line-height:42px;margin:56px 0 21px;padding-left:20px;padding-right:20px}	.plan{height:1760px}.premiumplan{margin-top:-478px;margin-left:auto;margin-right:auto}	.premium{width:100%;padding-bottom:53px;max-width:360px}	.basic{position:relative;float:none;left:0;top:993px}	.plus{position:relative;float:none;left:0;top:-90px}	hr.basic,hr.plus{top:0;left:0}	.premheader h1{margin:inherit}	.premium h2{font-size:30px;margin-top:52px;margin-bottom:41px}	.premium ul{margin-bottom:43px}	.basic{width:100%;max-width:300px}	.basic h1{margin-top:46px;margin-bottom:40px}	.plus{width:100%;max-width:300px}	.plus h1{margin-top:46px;margin-bottom:40px}}
