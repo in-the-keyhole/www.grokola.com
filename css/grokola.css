@@ -1,0 +1,273 @@
+/**
+ * Overide Themes Here
+ *
+ * All theme styles should be overide in this style sheet. Only overide the
+ * the rules you need to. To overide a style simply include the declaration
+ * from the 'clean-blog.css' or 'bootstrap.css' with a parent selector of '.grok'
+ *
+ * Example
+ * Uses the clean class of '.intro-header' to overide background-color.
+ * Only overide what you need to and be as specfic on the property as you can.
+ * .intro-header {
+ *      background-color: #bada55;
+ * }
+ *
+ */
+
+ html {
+    font-size: 100%;
+   -ms-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+   -webkit-font-smoothing: antialiased;
+ }
+
+ body {
+    font: normal 1em/1.61803em 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ }
+
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6 {
+    font-weight: 600;
+    line-height: 1.5
+}
+
+
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+a img:hover,
+a img:focus {
+  cursor: pointer;
+}
+
+
+
+/* ==========================================================================
+   Modules
+   ========================================================================== */
+
+/* Cover header
+   ========================================================================== */
+.g-coverHeader {
+    position: relative;
+    margin: 2.5em 0 0;
+    background: transparent url("../img/banners/kcdc-presenters1.jpg") 0 0 no-repeat;
+    background-size: contain;
+}
+
+.g-coverHeader:before {
+    content: "";
+    display: block;
+    padding-bottom: 41.4285%; /* Keeps aspect ration  based on image dims*/
+}
+
+.g-coverHeader .g-coverHeader__caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: .75em;
+}
+
+.g-coverHeader .g-coverHeader__caption:before { /* Vertically centers content within it, in this case the h1 */
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.5em;
+}
+
+.g-coverHeader__captionContent {
+    display: none;
+    vertical-align: middle;
+    padding-left: .2em;
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.5;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.37);
+    text-rendering: optimizeLegibility;
+}
+
+@media only screen and (min-width: 768px) {
+    .g-coverHeader__captionContent {
+        font-size: 2.02729em;
+        line-height: 1.47981em;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .g-coverHeader {
+
+    }
+    .g-coverHeader:before {
+
+    }
+}
+
+/* Icon Box
+   ========================================================================== */
+.icon-box {
+
+}
+
+.icon-box__media {
+    display: block;
+    height: 90px;
+    width: 90px;
+    background: #FFF;
+    border: 1px solid #E9E9E9;
+    color: #137FC4;
+    line-height: 90px;
+    font-size: 36px;
+    text-align: center;
+    border-radius: 100%;
+    transition: all 0.2s linear;
+    transform: translateZ(0);
+}
+
+.icon-box:hover .icon-box__media {
+    background: #137FC4;
+    border-color: #137FC4;
+    color: #FFF;
+    -moz-box-shadow: 0 0 1px 0 #137fc4, inset 0 0 0 7px #fff;
+    -webkit-box-shadow: 0 0 1px 0 #137FC4, inset 0 0 0 7px #FFF;
+    box-shadow: 0 0 1px 0 #137FC4, inset 0 0 0 7px #FFF;
+}
+
+
+/* Nav Bar
+   ========================================================================== */
+.navbar-custom {
+    background: #000000;
+    border-bottom-color: rgba(255, 255, 255, 0.82);
+}
+
+.navbar.is-fixed {
+    border-bottom-color: transparent;
+}
+
+.navbar-custom .navbar-brand {
+    position: absolute;
+    top: 11px;
+    left: 15px;
+    height: 30px;
+    width: 200px;
+    padding: 0;
+    background: rgba(0, 0, 0, 0) url("../img/logo.png") no-repeat 0 50%;
+    background-size: contain;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-custom .navbar-brand {
+        left: 30px; /*overides the negative left margin by adding it to the left position*/
+        top: 50%;
+        margin-top: -15px;
+    }
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus {
+    color: #cddb28;
+}
+
+.navbar-custom.is-fixed .nav li a {
+    color: #fff;
+}
+
+.navbar .navbar-toggle {
+    border-color: rgba(255, 255, 255, 0.82);
+}
+
+.navbar .navbar-toggle:focus,
+.navbar .navbar-toggle:active,
+.navbar .navbar-toggle:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+.navbar .navbar-toggle .icon-bar {
+    background-color: rgba(255, 255, 255, 0.82);
+}
+
+
+
+
+/* Into Header
+   ========================================================================== */
+.intro-header .site-heading,
+.intro-header .post-heading,
+.intro-header .page-heading {
+  color: #a1a1a1;
+}
+
+.intro-header .post-heading,
+.intro-header .page-heading {
+  padding: 0;
+}
+
+
+
+/* Pricing table
+   ========================================================================== */
+.pricing-table {
+    width:  100%;
+}
+
+.pricing-table td, .pricing-table th {
+    width: 25%;
+    max-width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-family: 'Aria', sans-serif;
+    font-size: 16px;
+    transition: all 300ms cubic-bezier(0.23,1,.32,1);
+    -webkit-transition: all 300ms cubic-bezier(0.23,1,.32,1);
+    -moz-transition: all 300ms cubic-bezier(0.23,1,.32,1);
+}
+
+
+/* Pricing Pod
+   ========================================================================== */
+.pricing-pod {
+    float: left;
+    width: 22%;
+    margin: 0 10px 0 0;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 0 rgba(0,0,0,.07);
+    -webkit-box-shadow: 5px 5px 0 rgba(0,0,0,.07);
+    -moz-box-shadow: 5px 5px 0 rgba(0,0,0,.07);
+}
+
+
+/* Per
+   ========================================================================== */
+.per {
+    margin: 0px 12px 20px;
+    padding: 10px 21px;
+    border: 1px solid #eceff1;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    text-align: center;
+}
+
+.per img {
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+}
+
