@@ -92,7 +92,7 @@ a img:focus {
 }
 
 .g-coverHeader__captionContent {
-    display: none;
+    /*display: none;*/
     vertical-align: middle;
     padding-left: .2em;
     margin: 0;
@@ -270,4 +270,5 @@ a img:focus {
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
 }
-
+/* Modal   ========================================================================== */
+.modal {	background: rgba(0,0,0,0.7);}.modal-content {	width: 100% !important;	width: auto;}
