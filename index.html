@@ -121,14 +121,13 @@
     <!-- Set your background image for this header on the line below. -->
 
     <header class="intro-header  g-coverHeader" role="banner">    
-        <div class="site-heading  g-coverHeader__caption">        	<a href="#" class="big-link" data-toggle="modal" data-target="#myModal" style="border: 1px solid #f00;">Click here</a>
+        <div class="site-heading  g-coverHeader__caption">        	<a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-play-circle"></i></a>
             <!--<h1 class="g-coverHeader__captionContent">
                 Code Solutions, Wiki, questions and Answers for Tribal Knowledge retention...
             </h1>-->            
         </div>
     </header>
     <main class="container  push--top" role="main">
-		<div class="row">				<!--<div class="page-subheading"><h2>What is Grokola?</h2></div>		        	<video width="1170" height="658" controls>		        	  <source src="video/Grokola_Promo.mp4" type="video/mp4">		        	  <!--<source src="movie.ogg" type="video/ogg">--*>		        	Your browser does not support the video tag.		        	</video>-->		    			</div>
         <!-- A few bullet point about grokOla -->
         <section class="push--bottom">
             <ul class="list-unstyled  row">
@@ -225,7 +224,7 @@
         </div>
     </footer>       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">     <div class="modal-dialog">       <div class="modal-content">         <div class="modal-header">           <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>         </div>         <div class="modal-body">           <video width="560" height="316" src="video/Grokola_Promo.mp4" controls>             <!--<source src="" type="video/mp4">-->                        Your browser does not support the video tag.           </video>         </div>       </div>     </div>   </div>
 
-       <!-- jQuery -->        <script src="js/jquery.js"></script>            <!-- Bootstrap Core JavaScript -->        <script src="js/bootstrap.js"></script>            <!-- Custom Theme JavaScript -->        <script src="js/clean-blog.js"></script>                <script>        $(document).ready(function(){        	jQuery('#myModal').on('hidden.bs.modal', function (e) {        	  // do something...        	  jQuery('#myModal video').attr("src", jQuery("#myModal  video").attr("src"));        	});        });                </script>    
+       <!-- jQuery -->        <script src="js/jquery.js"></script>            <!-- Bootstrap Core JavaScript -->        <script src="js/bootstrap.js"></script>            <!-- Custom Theme JavaScript -->        <script src="js/clean-blog.js"></script>                <script>        $(document).ready(function(){//        	$('#myModal').on('show.bs.modal', function (e) {//        		$('#myModal video').attr('autoplay', true);//        	});        	$('#myModal').on('hidden.bs.modal', function (e) {        	  // do something...        	  $('#myModal video').attr("src", $("#myModal  video").attr("src"));        	});        });                </script>    
 
     <!-- Google Analytics: change UA-XXXXX-X when account is setup. -->
     <!-- <script>
