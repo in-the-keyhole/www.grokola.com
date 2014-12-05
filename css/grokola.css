@@ -24,7 +24,7 @@
  body {
     font: normal 1em/1.61803em 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
  }
-
+section {	overflow: hidden;}
 
 /* ==========================================================================
    Typography
@@ -202,8 +202,7 @@ a img:focus {
 .navbar .navbar-toggle .icon-bar {
     background-color: rgba(255, 255, 255, 0.82);
 }.clear {	clear: both;}
-
-
+.img-rotation-right {	-ms-transform: rotate(7deg); /* IE 9 */	    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */	    transform: rotate(7deg);}.img-rotation-left {	-ms-transform: rotate(-7deg); /* IE 9 */	    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */	    transform: rotate(-7deg);}.about-content {	margin: 0 0 40px;	padding-bottom: 30px;	border-bottom: 1px solid #e1e1e1;}
 
 
 /* Into Header
