@@ -80,8 +80,7 @@ a img:focus {
     width: 100%;
     margin: 0;
     text-align: center;
-    padding: .75em;
-}
+    padding: .75em;}
 
 .g-coverHeader .g-coverHeader__caption:before { /* Vertically centers content within it, in this case the h1 */
     content: '';
@@ -93,15 +92,14 @@ a img:focus {
 
 .g-coverHeader__captionContent {
     /*display: none;*/
-    vertical-align: middle;
+    /*vertical-align: middle;*/    position: absolute;    top: 25%;    width: 35%;
     padding-left: .2em;
     margin: 0;
-    font-size: 1em;
+    font-size: 5em !important;    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     line-height: 1.5;
     color: white;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.37);
-    text-rendering: optimizeLegibility;
-}.g-coverHeader__caption a {	display: inline-block;}.g-coverHeader__caption a i {	color: #fff;	font-size: 10em;}
+    text-rendering: optimizeLegibility;}.g-coverHeader__caption a {	display: inline-block;	color: #777777;	font-size: 3em;}.g-coverHeader__caption a:hover {	color: #fff;	text-decoration: none;}.g-coverHeader__caption a i {	/*color: #fff;*/}
 
 @media only screen and (min-width: 768px) {
     .g-coverHeader__captionContent {
