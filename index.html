@@ -62,11 +62,14 @@
     <link href="css/grokola.css" rel="stylesheet">
 
     <!-- Site Utils CSS -->
-    <link href="css/utils.css" rel="stylesheet">    
+    <link href="css/utils.css" rel="stylesheet">
+    
+
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
 
     <!-- Feature Detection and HTML5 Element Support -->
     <script src="js/modernizr.js"></script>
@@ -75,7 +78,9 @@
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->        
+    <![endif]-->
+    
+    
 
 </head>
 
@@ -120,13 +125,23 @@
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
 
-    <header class="intro-header  g-coverHeader" role="banner">    
-        <div class="site-heading  g-coverHeader__caption">        	<h1 class="g-coverHeader__captionContent">        	    Code Solutions, Wiki, questions and Answers for Tribal Knowledge retention...        	</h1>        	<a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-play-circle"></i> Watch Now</a>
+    <header class="intro-header  g-coverHeader" role="banner">
+    
+        <div class="site-heading  g-coverHeader__caption">
+        	<h1 class="g-coverHeader__captionContent">
+        	    Code Solutions, Wiki, questions and Answers for Tribal Knowledge retention...
+        	</h1>
+        	<a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-play-circle"></i> Watch Now</a>
         </div>
-    </header>    <div class="testimonials">    	<blockquote>"Insert Quote or something here about the product. Could be something unique about Grokola"</blockquote>    </div>
-    <main class="container  push--top" role="main">    	
+    </header>
+    <div class="testimonials">
+    	<blockquote>"Insert Quote or something here about the product. Could be something unique about Grokola"</blockquote>
+    </div>
+    <main class="container  push--top" role="main">
+    	
         <!-- A few bullet point about grokOla -->
-        <section class="push--bottom">        	<div class="page-subheading"><h2>Grokola Key Points</h2></div>
+        <section class="push--bottom">
+        	<div class="page-subheading"><h2>Grokola Key Points</h2></div>
             <ul class="list-unstyled  row">
                 <li class="col-xs-12  col-sm-4  push--bottom">
                     <div class="media">
@@ -215,13 +230,53 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
+                    <p class="copyright text-muted">Copyright &copy; Keyhole Labs LLC, 2014</p>
                 </div>
             </div>
         </div>
-    </footer>       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">     <div class="modal-dialog">       <div class="modal-content">         <div class="modal-header">           <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>         </div>         <div class="modal-body">           <video width="560" height="316" src="video/Grokola_Promo.mp4" controls>             <!--<source src="" type="video/mp4">-->                        Your browser does not support the video tag.           </video>         </div>       </div>     </div>   </div>
+    </footer>
+    
+   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
 
-       <!-- jQuery -->        <script src="js/jquery.js"></script>            <!-- Bootstrap Core JavaScript -->        <script src="js/bootstrap.js"></script>            <!-- Custom Theme JavaScript -->        <script src="js/clean-blog.js"></script>                <script>        $(document).ready(function(){//        	$('#myModal').on('show.bs.modal', function (e) {//        		$('#myModal video').attr('autoplay', true);//        	});        	$('#myModal').on('hidden.bs.modal', function (e) {        	  // do something...        	  $('#myModal video').attr("src", $("#myModal  video").attr("src"));        	});        });                </script>    
+         </div>
+         <div class="modal-body">
+           <video width="560" height="316" src="video/Grokola_Promo.mp4" controls>
+             <!--<source src="" type="video/mp4">-->
+             
+           Your browser does not support the video tag.
+           </video>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   
+    <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+    
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.js"></script>
+    
+        <!-- Custom Theme JavaScript -->
+        <script src="js/clean-blog.js"></script>
+        
+        <script>
+        $(document).ready(function(){
+//        	$('#myModal').on('show.bs.modal', function (e) {
+//        		$('#myModal video').attr('autoplay', true);
+//        	});
+        	$('#myModal').on('hidden.bs.modal', function (e) {
+        	  // do something...
+        	  $('#myModal video').attr("src", $("#myModal  video").attr("src"));
+        	});
+        });
+        
+        </script>
+    
 
     <!-- Google Analytics: change UA-XXXXX-X when account is setup. -->
     <!-- <script>
