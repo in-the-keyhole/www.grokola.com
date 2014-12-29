@@ -1,0 +1,24 @@
+{
+  "name": "www.grokola.com",
+  "description": "",
+  "version": "1.0.0-SNAPSHOT",
+  "author": {
+    "name": "David Pitt",
+    "email": "dpitt@keyholesoftware.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": "0.10.26"
+  },
+  "scripts": {
+    "start": "node server"
+  },
+  "dependencies": {
+      "express":  ">= 1.2.0"
+  },
+  "devDependencies": {},
+  "keywords": []
+}

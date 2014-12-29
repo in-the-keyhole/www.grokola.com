@@ -24,7 +24,10 @@
  body {
     font: normal 1em/1.61803em 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
  }
-section {	overflow: hidden;}
+
+section {
+	overflow: hidden;
+}
 
 /* ==========================================================================
    Typography
@@ -80,7 +83,8 @@ a img:focus {
     width: 100%;
     margin: 0;
     text-align: center;
-    padding: .75em;}
+    padding: .75em;
+}
 
 .g-coverHeader .g-coverHeader__caption:before { /* Vertically centers content within it, in this case the h1 */
     content: '';
@@ -92,18 +96,40 @@ a img:focus {
 
 .g-coverHeader__captionContent {
     /*display: none;*/
-    /*vertical-align: middle;*/    position: absolute;    top: 25%;    width: 35%;
+    /*vertical-align: middle;*/
+    position: absolute;
+    top: 25%;
+    width: 35%;
     padding-left: .2em;
     margin: 0;
-    font-size: 5em !important;    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    font-size: 5em !important;
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     line-height: 1.5;
     color: white;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.37);
-    text-rendering: optimizeLegibility;}.g-coverHeader__caption a {	display: inline-block;	color: #777777;	/*font-family: "Quicksand";*/	font-size: 3.5em;	/*font-weight: bold;*/}.g-coverHeader__caption a:hover {	color: #fff;	text-decoration: none;}.g-coverHeader__caption a i {	/*color: #fff;*/}
+    text-rendering: optimizeLegibility;
+}
+
+.g-coverHeader__caption a {
+	display: inline-block;
+	color: #777777;
+	/*font-family: "Quicksand";*/
+	font-size: 3.5em;
+	/*font-weight: bold;*/
+}
+
+.g-coverHeader__caption a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.g-coverHeader__caption a i {
+	/*color: #fff;*/
+}
 
 @media only screen and (min-width: 768px) {
     .g-coverHeader__captionContent {
-        font-size: 2.02729em;
+        font-size: 0.02729em;
         line-height: 1.47981em;
     }
 }
@@ -199,8 +225,48 @@ a img:focus {
 
 .navbar .navbar-toggle .icon-bar {
     background-color: rgba(255, 255, 255, 0.82);
-}.clear {	clear: both;}
-.img-rotation-right {	-ms-transform: rotate(7deg); /* IE 9 */	    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */	    transform: rotate(7deg);}.img-rotation-left {	-ms-transform: rotate(-7deg); /* IE 9 */	    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */	    transform: rotate(-7deg);}.about-content {	margin: 0 0 40px;	padding-bottom: 30px;	border-bottom: 1px solid #e1e1e1;}.testimonials {	width: 100%;	padding: 3em 0;	background: #e9e9e9;		color: #fff !important;	text-align: center;}.testimonials blockquote {	border: 0px;		color: #686767;	font-size: 2em;	line-height: 1.3em;}
+}
+
+.clear {
+	clear: both;
+}
+
+.img-rotation-right {
+	-ms-transform: rotate(7deg); /* IE 9 */
+	    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+	    transform: rotate(7deg);
+}
+
+.img-rotation-left {
+	-ms-transform: rotate(-7deg); /* IE 9 */
+	    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+	    transform: rotate(-7deg);
+}
+
+.about-content {
+	margin: 0 0 40px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+
+.testimonials {
+	width: 100%;
+	padding: 3em 0;
+	background: #e9e9e9;
+	
+	color: #fff !important;
+	text-align: center;
+}
+
+
+.testimonials blockquote {
+	border: 0px;
+	
+	color: #686767;
+	font-size: 2em;
+	line-height: 1.3em;
+}
 
 
 /* Into Header
@@ -267,5 +333,13 @@ a img:focus {
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
 }
-/* Modal   ========================================================================== */
-.modal {	background: rgba(0,0,0,0.7);}.modal-content {	width: 100% !important;	width: auto;}
+/* Modal
+   ========================================================================== */
+.modal {
+	background: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+	width: 100% !important;
+	width: auto;
+}
