@@ -315,6 +315,99 @@ a img:focus {
     -moz-box-shadow: 5px 5px 0 rgba(0,0,0,.07);
 }
 
+/* Pricing Options
+   ========================================================================== */
+.premiumheader {
+    font-size: 36px;
+    height: 4.5em;
+}
+
+.premiumheader h1 {
+    padding: 1.5em 0;
+}
+
+.premium {
+    margin: 0 auto 20px;
+    padding-bottom: 68px;
+}
+
+.basic, .plus {
+    margin: 40px auto 0;
+}
+
+.basic {
+    padding-bottom: 139px;
+}
+
+.basic h1 {
+    margin: 0.5em 0;
+}
+
+.plus {
+    padding-bottom: 12px;
+}
+
+.plus h1 {
+    height: 2em;
+    margin: 1em 0;
+}
+
+.active-clients-message {
+    display: inline-block;
+}
+
+@media (max-width: 480px) {
+    .premiumplan {
+        margin-top: -470px;
+    }
+
+    .plus {
+        top: 0px;
+    }
+
+    .basic {
+        top: 1305px;
+        padding-bottom: 0px;
+    }
+
+    .active-clients-message {
+        margin-top: 540px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+    .premiumplan {
+        margin-top: -470px;
+    }
+
+    .plus {
+        top: 0px;
+    }
+
+    .basic {
+        top: 1350px;
+        padding-bottom: 0px;
+    }
+
+    .active-clients-message {
+        margin-top: 535px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .premiumplan {
+        margin-top: -650px;
+    }
+
+    .basic {
+        top: 670px;
+    }
+
+    .plus {
+        top: -20px;
+    }
+}
+
 
 /* Per
    ========================================================================== */
