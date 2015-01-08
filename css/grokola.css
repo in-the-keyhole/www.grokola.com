@@ -64,9 +64,15 @@ a img:focus {
    ========================================================================== */
 .g-coverHeader {
     position: relative;
-    margin: 2.5em 0 0;
-    background: transparent url("../img/banners/kcdc-presenters1.jpg") 0 0 no-repeat;
-    background-size: contain;
+    margin: 0;
+    background: transparent url("../img/banners/tech_night.jpg") 0 0 no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 980px) {
+    .g-coverHeader {
+        min-height: 600px;
+    }
 }
 
 .g-coverHeader:before {
@@ -86,10 +92,16 @@ a img:focus {
     padding: .75em;
 }
 
+@media (max-width: 979px) {
+    .g-coverHeader {
+        height: 400px;
+    }
+}
+
 .g-coverHeader .g-coverHeader__caption:before { /* Vertically centers content within it, in this case the h1 */
     content: '';
     display: inline-block;
-    height: 100%;
+    height: 30%;
     vertical-align: middle;
     margin-right: -0.5em;
 }
@@ -97,12 +109,9 @@ a img:focus {
 .g-coverHeader__captionContent {
     /*display: none;*/
     /*vertical-align: middle;*/
-    position: absolute;
-    top: 15%;
-    width: 35%;
     padding-left: .2em;
     margin: 0;
-    font-size: 5em !important;
+    font-size: 4.5em !important;
     font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     line-height: 1.5;
     color: white;
@@ -110,17 +119,54 @@ a img:focus {
     text-rendering: optimizeLegibility;
 }
 
-.g-coverHeader__caption a {
+.g-coverHeader__captionSubcontent {
+    font-weight: normal;
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.g-coverHeader__playLink {
 	display: inline-block;
-	color: #777777;
+    color: #CCCCCC;
 	/*font-family: "Quicksand";*/
-	font-size: 3.5em;
+	font-size: 2.5em;
+    margin-top: 1.5em;
 	/*font-weight: bold;*/
 }
 
-.g-coverHeader__caption a:hover {
-	color: #fff;
+.g-coverHeader__playLink:hover {
+    color: #CCCCCC;
 	text-decoration: none;
+}
+
+.g-callToAction {
+    margin-top: 1.5em;
+    font-size: 4em;
+}
+
+.g-callToAction__link {
+    display: block;
+    width: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    background-color: #83a52c;
+    border-bottom: 2px solid #6c8824;
+    border-right: 2px solid #6c8824;
+    padding: 15px;
+    border-radius: 40px;
+    font-size: 0.5em;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.g-callToAction__link:hover {
+    color: white;
+    background-color: #6c8824;
+    border-bottom-color: #53691c;
+    border-right-color: #53691c;
+    text-decoration: none;
+    transform: scale(1.05);
 }
 
 .g-coverHeader__caption a i {
@@ -130,7 +176,7 @@ a img:focus {
 @media only screen and (min-width: 768px) {
     .g-coverHeader__captionContent {
         font-size: 0.02729em;
-        line-height: 1.47981em;
+        line-height: 1em;
     }
 }
 
@@ -177,8 +223,15 @@ a img:focus {
 /* Nav Bar
    ========================================================================== */
 .navbar-custom {
-    background: #000000;
-    border-bottom-color: rgba(255, 255, 255, 0.82);
+    background-color: #000000;
+}
+
+.navbar.is-fixed {
+    background-color: #000000 !important;
+}
+
+.navbar-custom.navbar-home {
+    background: transparent;
 }
 
 .navbar.is-fixed {
