@@ -135,8 +135,13 @@ a img:focus {
 }
 
 .g-coverHeader__playLink:hover {
-    color: #CCCCCC;
+    color: #EEEEEE;
 	text-decoration: none;
+}
+
+.g-coverHeader__playLink:focus {
+    outline: none !important;
+    color: #ffffff;
 }
 
 .g-callToAction {
