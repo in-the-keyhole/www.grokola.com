@@ -430,7 +430,7 @@ a img:focus {
 }
 
 .basic {
-    padding-bottom: 139px;
+    padding-bottom: 94px;
 }
 
 .basic h1 {
@@ -465,6 +465,12 @@ a img:focus {
     }
 
     .active-clients-message {
+        margin-top: 540px;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-subheading {
         margin-top: 540px;
     }
 }
