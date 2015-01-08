@@ -92,18 +92,22 @@ a img:focus {
     padding: .75em;
 }
 
-@media (max-width: 979px) {
-    .g-coverHeader {
-        height: 400px;
-    }
-}
-
 .g-coverHeader .g-coverHeader__caption:before { /* Vertically centers content within it, in this case the h1 */
     content: '';
     display: inline-block;
     height: 30%;
     vertical-align: middle;
     margin-right: -0.5em;
+}
+
+@media (max-width: 979px) {
+    .g-coverHeader {
+        height: 500px;
+    }
+
+    .g-coverHeader .g-coverHeader__caption:before {
+        height: 15%;
+    }
 }
 
 .g-coverHeader__captionContent {
@@ -174,6 +178,31 @@ a img:focus {
     transform: scale(1.05);
 }
 
+@media (max-width: 1199px) {
+    .g-coverHeader {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1075px) {
+    .g-coverHeader__captionContent {
+        font-size: 3.5em !important;
+    }
+}
+
+@media (max-width: 850px) {
+    .g-coverHeader__captionContent {
+        font-size: 3em !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .g-coverHeader__captionContent {
+        font-size: 2em !important;
+    }
+}
+
+
 .g-coverHeader__caption a i {
 	/*color: #fff;*/
 }
@@ -229,6 +258,7 @@ a img:focus {
    ========================================================================== */
 .navbar-custom {
     background-color: #000000;
+    border-bottom: 1px solid transparent;
 }
 
 .navbar.is-fixed {
@@ -259,6 +289,12 @@ a img:focus {
         left: 30px; /*overides the negative left margin by adding it to the left position*/
         top: 50%;
         margin-top: -15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .g-index .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.95);
     }
 }
 
