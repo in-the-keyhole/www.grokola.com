@@ -536,3 +536,27 @@ a img:focus {
 	width: 100% !important;
 	width: auto;
 }
+
+
+/* Zach's Additions for vertical alignment */
+.about-content {
+	display: table-row;
+	margin: 0;
+}
+
+.about-row {
+	border-collapse: collapse;
+}
+
+.about-cell {
+	display: table-cell;
+	float: none;
+	vertical-align: middle;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+.about-content-plain {
+	display: block;
+	margin: 0 0 10px;
+}
