@@ -537,3 +537,22 @@ a img:focus {
 	width: auto;
 }
 
+/* Zach's Additions */
+
+.about-content {
+	display: table-row;
+	margin: 0;
+}
+
+.about-cell {
+	display: table-cell;
+	float: none;
+	vertical-align: middle;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+.about-content-plain {
+	display: block;
+	margin: 0 0 10px;
+}
