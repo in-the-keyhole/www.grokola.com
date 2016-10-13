@@ -1,0 +1,40 @@
+.profile-window {
+  position: fixed;
+  display: block;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  z-index: 10;
+  animation: comedown 0.2s ease-in-out;
+
+  .profile-header-bar {
+    width: 100%;
+    height: 70px;
+    background: color(blue);
+    color: #fff;
+    overflow: hidden;
+
+    a {
+      float: right;
+    }
+  }
+
+}
+
+@-webkit-keyframes comedown {
+  0% { top: -100%; }
+  100% { top: 0;  }
+}
+@-o-keyframes comedown {
+  0% { top: -100%; }
+  100% { top: 0;  }
+}
+@-moz-keyframes comedown {
+  0% { top: -100%; }
+  100% { top: 0;  }
+}
+@keyframes comedown {
+  0% { top: -100%; }
+  100% { top: 0;  }
+}

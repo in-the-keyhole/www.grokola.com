@@ -1,0 +1,33 @@
+footer {
+  display: flex;
+  margin-top: auto;
+  padding: 3rem 0;
+  border-top: 1px solid #d0d0d0;
+
+  .footer-content {
+    //flex: 1;
+    display: flex;
+    width: 70vw;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  ul {
+    margin-left: auto;
+
+    li {
+      display: inline-block;
+      padding: 0 1rem;
+      font-size: 1.8rem;
+      list-style: none;
+
+      a {
+        color: color(black);
+        font-size: 2rem;
+      }
+    }
+  }
+}

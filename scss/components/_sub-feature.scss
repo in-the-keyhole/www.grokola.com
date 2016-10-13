@@ -1,0 +1,65 @@
+.sub-feature {
+  //display: flex;
+  padding: 5rem 0rem;
+  // background-image:
+  // linear-gradient(
+  //   to right,
+  //   #b6fbff, #83a4d4
+  // );
+  background: #f7f7f7;
+
+  &-container {
+    //display: flex;
+    width: 95vw;
+    margin: auto;
+  }
+
+  h2 {
+    display: block;
+    padding-bottom: 10rem;
+    color: color(black);
+    font-size: 4.8rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &-content {
+    display: flex;
+
+    .copy {
+      flex: 1;
+    }
+
+    blockquote {
+      padding: 0 20px;
+      border-left-color: color(purple);
+      color: color(black);
+      font-size: 2.8rem;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 5rem;
+    }
+    .video {
+      flex: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .sub-feature-container {
+    width: 70vw;
+  }
+
+  .sub-feature {
+    &-content {
+      flex-direction: column;
+      blockquote {
+        font-size: 2.4rem;
+        line-height: 4.2rem;
+      }
+    }
+    .video {
+      //display: none;
+    }
+  }
+}

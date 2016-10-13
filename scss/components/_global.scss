@@ -1,0 +1,174 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  //perspective: 900;
+  font-family: 'Roboto-Light', 'sans-serif';
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+a {
+  color: color(blue);
+
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+
+  &:hover, &:active {
+    animation: color_change 2s infinite alternate;
+    text-decoration: none;
+  }
+}
+
+.st0{fill:#7AC259;}
+
+.logo:hover .st0 { animation: logo_color_change 2.5s infinite alternate; }
+
+@keyframes color_change {
+  0%  { color: color(blue); }
+  25% { color: color(green); }
+  50% { color: color(purple); }
+  75% { color: color(lightRed); }
+  100% { color: color(red); }
+}
+
+@keyframes logo_color_change {
+  0%  { fill: color(blue); }
+  25% { fill: color(green); }
+  50% { fill: color(purple); }
+  75% { fill: color(lightRed); }
+  100% { fill: color(black); }
+}
+
+
+
+// Div for main body of site.
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  //height: 100%;
+}
+
+.btn {
+  position: relative;
+  padding: 1.5rem 2rem;
+  font-size: 1.8rem;
+  border-width: 2px;
+  border-radius: 5em;
+  text-align: center;
+
+  // &:after {
+  //   content: '\f105';
+  //   font-family: 'FontAwesome';
+  //   font-style: normal;
+  //   font-weight: normal;
+  //   display: inline-block;
+  //   //padding-left: 1rem;
+  //   opacity: 0;
+  // }
+
+  &:hover {
+    color: #fff !important;
+    animation: none;
+    &:after {
+      padding-left: 1rem;
+      opacity: 1;
+    }
+  }
+}
+
+.btn-blue {
+  border-color: color(blue);
+  color: color(blue);
+
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: color(blue);
+    color: #fff;
+
+
+  }
+
+}
+
+.btn-ltred {
+  border-color: color(lightRed);
+  color: color(lightRed);
+
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: color(lightRed);
+    color: #fff !important;
+
+
+  }
+
+}
+
+.breadcrumb {
+  display: flex;
+  width: 95vw;
+  margin: 0 auto;
+  background: transparent;
+  border-bottom: 1px solid #d0d0d0;
+
+  h3 {
+    flex: 1;
+  }
+
+  .btn {
+    margin-left: auto;
+    padding: 1.5rem 1rem;
+    font-size: 1.8rem;
+    align-items: center;
+    vertical-align: middle;
+  }
+}
+
+.bg-salmon {
+  background: color(lightRed);
+}
+
+::selection {
+  background: color(green);
+  color: #fff;
+}
+
+.no-btm-border {
+  border-bottom: 0px !important;
+}
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display:none;
+    background: color(green);
+    border-radius: 30px;
+    padding: 0.75rem 1rem;
+    color: #fff;
+
+    &:hover, &:visited {
+      color: #fff;
+      animation: none;
+    }
+}
+
+.img-responsive {
+  //margin: 2rem auto;
+}
+
+@media screen and (max-width: 640px) {
+  .breadcrumb {
+    .btn {
+      display: none;
+    }
+  }
+}

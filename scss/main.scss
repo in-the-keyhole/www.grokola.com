@@ -1,0 +1,17 @@
+//Global variables (i.e. brand colors) & global styles
+@import 'components/colors';
+@import 'components/global';
+
+//Header / Navigational styles
+@import 'components/header';
+@import 'components/header-menu';
+@import 'components/profile-window';
+
+//Content based styles
+@import 'components/main-feature';
+@import 'components/content';
+@import 'components/sub-feature';
+@import 'components/pricing';
+
+//Footer styles
+@import 'components/footer';
