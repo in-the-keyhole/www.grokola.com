@@ -217,6 +217,18 @@
       }
     }
   }
+
+  #home {
+    .pod {
+      &:nth-child(odd){
+
+          .pod-content {
+            padding: 0;
+          }
+
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 640px) {
