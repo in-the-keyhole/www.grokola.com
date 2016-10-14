@@ -416,7 +416,7 @@ ul.main-nav {
   .main-feature .main-feature-copy {
     text-align: center; }
     .main-feature .main-feature-copy h1 {
-      font-size: 5.8rem; }
+      font-size: 5rem; }
     .main-feature .main-feature-copy p {
       font-size: 2.4rem; }
   .main-feature .main-feature-image {
@@ -580,6 +580,7 @@ ul.main-nav {
       background-image: -webkit-linear-gradient(left, #817dbb, #5bc9e0);
       background-image: linear-gradient(to right, #817dbb, #5bc9e0); }
     .pod .pod-content {
+      padding: 0;
       margin-bottom: 2rem; }
     .pod .image {
       margin-top: 2rem;
