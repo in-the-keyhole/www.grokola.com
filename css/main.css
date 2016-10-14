@@ -484,8 +484,8 @@ ul.main-nav {
     .pod .pod-content h2 {
       display: block;
       padding-bottom: 4rem;
-      font-size: 4.8rem;
-      line-height: 6.4rem;
+      font-size: 3.8rem;
+      line-height: 5.4rem;
       text-transform: uppercase; }
       .pod .pod-content h2::after {
         content: '';
