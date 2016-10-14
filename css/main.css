@@ -439,10 +439,10 @@ ul.main-nav {
     .pod--centered .pod-content {
       text-align: center; }
       .pod--centered .pod-content h1 {
-        padding-bottom: 3rem;
-        font-size: 4.4rem;
+        padding-bottom: 4rem;
+        font-size: 5.4rem;
         color: #403f3f;
-        line-height: 5.5rem; }
+        line-height: 7.5rem; }
       .pod--centered .pod-content h2::after {
         content: '';
         position: relative;
