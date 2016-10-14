@@ -18,16 +18,16 @@ body, h1, h2, h3, h4, p, a {
     opacity: 1; } }
 
 h1 {
-  font-size: 3.8em; }
+  font-size: 22px; }
 
 h2 {
-  font-size: 3em; }
+  font-size: 20em; }
 
 h3 {
-  font-size: 2em; }
+  font-size: 18px; }
 
 h4 {
-  font-size: 1em; }
+  font-size: 16px; }
 
 a {
   color: #5bc9e0;
