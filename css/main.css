@@ -17,8 +17,17 @@ body, h1, h2, h3, h4, p, a {
   to {
     opacity: 1; } }
 
-h2 {
+h1 {
   font-size: 3.8rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1rem; }
 
 a {
   color: #5bc9e0;
