@@ -63,8 +63,8 @@
     }
 
     iframe {
-      width: 1000px;
-      height: 500px;
+      max-width: 1000px;
+      max-height: 500px;
     }
   }
 
@@ -170,6 +170,12 @@
   }
 }
 
+@media screen and (min-width: 1900px) {
+  .embed-responsive-16by9 {
+      margin-bottom: -50rem;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .pod {
     text-align: center;
@@ -202,7 +208,10 @@
       padding: 0;
     }
 
-
+    .embed-responsive-16by9 {
+      padding-bottom: 132% !important;
+      //margin-bottom: -20rem !important;
+    }
 
     .image {
       margin-top: 2rem;
@@ -245,6 +254,10 @@
         padding: 3rem 0;
       }
     }
+  }
+  .embed-responsive-16by9 {
+    //padding-bottom: 132% !important;
+    margin-bottom: 0rem !important;
   }
 }
 

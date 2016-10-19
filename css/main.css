@@ -495,6 +495,7 @@ ul.main-nav {
   border-bottom: 1px solid #d0d0d0;
   color: #403f3f; }
   .pod .img-responsive {
+    max-width: 75%;
     margin: 2rem auto; }
   .pod--centered {
     -webkit-box-pack: center;
@@ -521,13 +522,14 @@ ul.main-nav {
         background-image: -webkit-linear-gradient(left, #817dbb, #5bc9e0);
         background-image: linear-gradient(to right, #817dbb, #5bc9e0); }
     .pod--centered .image {
+      width: 100%;
       text-align: center;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
     .pod--centered iframe {
-      width: 1000px;
-      height: 500px; }
+      max-width: 1000px;
+      max-height: 500px; }
   .pod .pod-content {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -615,6 +617,10 @@ ul.main-nav {
               flex: 1;
       list-style: none; }
 
+@media screen and (min-width: 1900px) {
+  .embed-responsive-16by9 {
+    margin-bottom: -50rem; } }
+
 @media screen and (max-width: 800px) {
   .pod {
     text-align: center;
@@ -638,6 +644,8 @@ ul.main-nav {
     .pod .pod-content {
       margin-bottom: 2rem;
       padding: 0; }
+    .pod .embed-responsive-16by9 {
+      padding-bottom: 132% !important; }
     .pod .image {
       margin-top: 2rem;
       text-align: center; }
@@ -653,7 +661,10 @@ ul.main-nav {
 
 @media screen and (max-width: 640px) {
   .client-spotlight ul li {
-    padding: 3rem 0; } }
+    padding: 3rem 0; }
+  .embed-responsive-16by9 {
+    margin-bottom: 0rem !important; }
+   }
 
 @media screen and (max-width: 1593px) {
   .pod .pod-content {
