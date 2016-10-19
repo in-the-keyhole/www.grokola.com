@@ -209,8 +209,9 @@ header {
     width: 95vw;
     margin: auto; }
   header .logo {
-    width: 44px;
+    width: 223px;
     height: 44px;
+    margin-top: 2px;
     padding: 0; }
   header nav {
     display: -webkit-box;
