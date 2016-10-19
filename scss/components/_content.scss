@@ -63,8 +63,12 @@
     }
 
     iframe {
-      max-width: 1000px;
-      max-height: 500px;
+      position: relative !important;
+      display: block !important;
+      max-width: 1000px !important;
+      max-height: 500px !important;
+      min-height: 500px;
+      margin: 0 auto !important;
     }
   }
 
