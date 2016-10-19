@@ -621,10 +621,6 @@ ul.main-nav {
               flex: 1;
       list-style: none; }
 
-@media screen and (min-width: 1900px) {
-  .embed-responsive-16by9 {
-    margin-bottom: -50rem; } }
-
 @media screen and (max-width: 800px) {
   .pod {
     text-align: center;
